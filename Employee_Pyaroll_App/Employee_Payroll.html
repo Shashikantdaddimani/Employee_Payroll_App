@@ -18,6 +18,7 @@
             </div>
         </div>
     </header>
+    
     <!--UC2-Employee Payroll Form With Header and Name-->
     <div class="form-content">
         <form class="form" action="#" onsubmit="save(event);return false">
@@ -27,8 +28,31 @@
         <div class="row-content">
             <label class="lable text" for="name" >Name</label>
             <input class="input" type="text" id="name" name="name" placeholder="your name.." required>
-
         </div>
+
+        <!-- UC3-Specify Profile Pic to the Employee Payroll App-->
+            <div class="row-content">
+                <label class="lable txt" for="profile"> Profile Image</label>
+                <div class="profile-radio-content">
+                    <label> 
+                        <input type="radio" name="profile" id="profile1" value="/Logo/Ellipse -1.png" required>
+                        <img class="profile" id="image1" src="/Logo/Ellipse -1.png" alt="">
+                    </label>
+                    <label for=""> 
+                        <input type="radio" name="profile" id="profile2" value="/Logo/Ellipse -2.png" required>
+                        <img class="profile" id="image2" src="/Logo/Ellipse -2.png" alt="">
+                    </label>
+                    <label for=""> 
+                        <input type="radio" name="profile" id="profile3" value="/Logo/Ellipse -2.png" required>
+                        <img class="profile" id="image3" src="/Logo/Ellipse -5.png" alt="">
+                    </label>
+                    <label for=""> 
+                        <input type="radio" name="profile" id="profile4" value="/Logo/Ellipse -2.png" required>
+                        <img class="profile" id="image4" src="/Logo/Ellipse -7.png" alt="">
+                    </label>
+
+                </div>
+            </div>
         </form>
     </div>
 </body>
