@@ -50,8 +50,39 @@
                         <input type="radio" name="profile" id="profile4" value="/Logo/Ellipse -2.png" required>
                         <img class="profile" id="image4" src="/Logo/Ellipse -7.png" alt="">
                     </label>
-
                 </div>
+            </div>
+
+            <!-- Uc4-Employee Payroll Form with Gender, Department and Salary Range-->
+            
+            <div class="row-content">
+                <label class="lable txt" for="gender"> Gender</label>
+                <div>
+                    <input type="radio" name="gender" id="male" value="male">
+                    <label class="text" for="male">Male</label>
+                    <input type="radio" name="gender" id="female" value="female">
+                    <label class="text" for="female">female</label>
+                </div>
+            </div>
+            <div class="row-content">
+                <label class="lable txt" for="department"> Department</label>
+                <div>
+                    <input class="checkbox" type="checkbox" id="hr" name="hr" value="HR">
+                    <label class="text" for="hr">HR</label>
+                    <input class="checkbox" type="checkbox" id="sales" name="sales" value="sales">
+                    <label class="text" for="sales">Sales</label>
+                    <input class="checkbox" type="checkbox" id="finance" name="finance" value="finance">
+                    <label class="text" for="finance">Finance</label>
+                    <input class="checkbox" type="checkbox" id="engineer" name="engineer" value="engineer">
+                    <label class="text" for="engineer">Engineer</label>
+                    <input class="checkbox" type="checkbox" id="others" name="others" value="others">
+                    <label class="text" for="others">Others</label>
+                </div>
+            </div>
+            <div class="row-content">
+                <label class="lable txt" for="salary"> choose your salary :</label>
+                <input class="input" type="range" name="salary" id="salary" min="400000" max="600000" step="100" value="500000">
+                <output class="salary-output text" for="salary">500000</output>
             </div>
         </form>
     </div>
