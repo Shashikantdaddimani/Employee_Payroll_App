@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./Employee_Payroll.css">
 </head>
 <body>
+    <script src="./Employee_Payroll.js"></script>
     <!-- UC1-Employee payroll App with logo-->
     <header class="header-content header">
         <div class="log-content">
@@ -26,13 +27,13 @@
             Employee Payroll form
         </div>
         <div class="row-content">
-            <label class="lable text" for="name" >Name</label>
+            <label class="lable text" for="name" >Name :</label>
             <input class="input" type="text" id="name" name="name" placeholder="your name.." required>
         </div>
 
         <!-- UC3-Specify Profile Pic to the Employee Payroll App-->
             <div class="row-content">
-                <label class="lable txt" for="profile"> Profile Image</label>
+                <label class="lable " for="profile"> Profile Image :</label>
                 <div class="profile-radio-content">
                     <label> 
                         <input type="radio" name="profile" id="profile1" value="/Logo/Ellipse -1.png" required>
@@ -56,7 +57,7 @@
             <!-- Uc4-Employee Payroll Form with Gender, Department and Salary Range-->
 
             <div class="row-content">
-                <label class="lable txt" for="gender"> Gender</label>
+                <label class="lable text" for="gender"> Gender :</label><br><br>
                 <div>
                     <input type="radio" name="gender" id="male" value="male">
                     <label class="text" for="male">Male</label>
@@ -65,7 +66,7 @@
                 </div>
             </div>
             <div class="row-content">
-                <label class="lable txt" for="department"> Department</label>
+                <label class="lable text" for="department"> Department :</label><br><br>
                 <div>
                     <input class="checkbox" type="checkbox" id="hr" name="hr" value="HR">
                     <label class="text" for="hr">HR</label>
@@ -80,13 +81,13 @@
                 </div>
             </div>
             <div class="row-content">
-                <label class="lable txt" for="salary"> choose your salary :</label>
+                <label class="lable text" for="salary"> choose your salary :</label><br><br>
                 <input class="input" type="range" name="salary" id="salary" min="400000" max="600000" step="100" value="500000">
                 <output class="salary-output text" for="salary">500000</output>
             </div>
             <!-- UC5-Ability to specify the start date with Day, Month and Year as Select Input Item -->
             <div class="row-content">
-                <label class="lable txt" for="staetDate"> Start Date :</label>
+                <label class="lable txt" for="staetDate"> Start Date :</label><br><br>
                 <div>
                     <select name="Day" id="day">
                         <option value="1">1</option>
@@ -146,11 +147,11 @@
             </div>
             <!-- UC6-Ability to add Notes and Button -->
             <div class="row-content">
-                <label class="lable text" for="notes">Notes</label>
+                <label class="lable text" for="notes">Notes</label><br><br>
                 <textarea name="Notes" id="notes" class="input" placeholder="" style="height: 100px"></textarea>
             </div>
             <div class="buttonParent">
-                <a href="./home.html" class="resetButton button cancelButton">Cancle</a>
+                <a href="./home.html" class="resetButton button cancelButton">Cancel</a>
                 <div class="submit-reset">
                     <button type="submit" class="button submitButton" id="submitButton">Submit</button>
                     <button type="reset" class="resetButton button">Reset</button>
