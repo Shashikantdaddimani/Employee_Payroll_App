@@ -7,50 +7,50 @@ class EmployeepayrollData{
     }
 
     get name(){
-        return this.name;
+        return this._name;
     }
     set name(name){
-        let nameRegex = RegExp("^[A-Z]{1}[a-zA-Z\\s]{2,}$");
+        let nameRegex = RegExp("^[A-Z]{1}[a-zA-Z]{2,}$");
         if(nameRegex.test(name))
         this._name=name;
         else throw "Name is Incorrect!";
     }
 
     get profilePic(){
-    return this.profilePic;
+    return this._profilePic;
     }
     set profilePic(profilePic){
-        this.profilePic=profilePic;
+        this._profilePic=profilePic;
     }
     get gender(){
-        return this.gender
+        return this._gender
     }
     set gender(gender){
-        this.gender=gender;
+        this._gender=gender;
     }
     get department(){
-        return this.department;
+        return this._department;
     }
     set department(department){
-        this.department=department;
+        this._department=department;
     }
     get salary (){
-        return this.salary;
+        return this._salary;
     }
     set salary(salary){
-        this.salary=salary;
+        this._salary=salary;
     }
     get note(){
-        return this.note;
+        return this._note;
     }
     set note(note){
-        this.note=note;
+        this._note=note;
     }
     get startDate(){
-        return this.startDate;
+        return this._startDate;
     }
     set startDate(startDate){
-        this.startDate=startDate;
+        this._startDate=startDate;
     }
     toString() {
         const options = { year: "numaric", month: "long", day: "numaric" };
@@ -60,3 +60,26 @@ class EmployeepayrollData{
         ", salary : " + this.salary + ", startDate : " + empDate + ", note : " + this.note;
     }
 }
+window.addEventListener("DOMContentLoaded", (event) => {
+    const name = document.querySelector("#name");
+    const textError = document.querySelector(".text-error");
+    name.addEventListener("input", function () {
+        if (name.value && name.value.length == 0) {
+            textError.textContent = "";
+            return;
+        }
+        try {
+            (new EmployeepayrollData()).name = name.value;
+            textError.textContent = "";
+        }
+        catch (exception) {
+            textError.textContent = exception;
+        }
+    });
+    const salary = document.querySelector("#salary");
+    const output = document.querySelector(".salary-output");
+    output.textContent = salary.value;
+    salary.addEventListener("input", function () {
+        output.textContent = salary.value;
+    });
+});
