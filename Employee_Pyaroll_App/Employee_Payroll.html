@@ -21,8 +21,8 @@
     </header>
     
     <!--UC2-Employee Payroll Form With Header and Name-->
-    <div class="form-content">
-        <form class="form" action="#" onsubmit="save(event);return false">
+    <div id="formId" class="form-content">
+        <form class="form" action="#" onreset="resetForm()" onsubmit="save()">
         <div class="form-head">
             Employee Payroll form
         </div>
@@ -88,7 +88,7 @@
             </div>
             <!-- UC5-Ability to specify the start date with Day, Month and Year as Select Input Item -->
             <div class="row-content">
-                <label class="lable txt" for="staetDate"> Start Date :</label><br><br>
+                <label class="lable txt" for="startDate"> Start Date :</label><br><br>
                 <div>
                     <select name="Day" id="day">
                         <option value="1">1</option>
@@ -152,7 +152,7 @@
                 <textarea name="Notes" id="notes" class="input" placeholder="" style="height: 100px"></textarea>
             </div>
             <div class="buttonParent">
-                <a href="./home.html" class="resetButton button cancelButton">Cancel</a>
+                <a href="EmployeePayrollList.html" class="resetButton button cancelButton">Cancel</a>
                 <div class="submit-reset">
                     <button type="submit" class="button submitButton" id="submitButton">Submit</button>
                     <button type="reset" class="resetButton button">Reset</button>
