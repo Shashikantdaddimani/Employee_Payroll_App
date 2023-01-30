@@ -6,26 +6,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>employee-Payroll</title>
-    <link rel="stylesheet" href="emp.css">
+    <link rel="stylesheet" href="Employee.css">
 </head>
 
 <body>
-    <script src="Emp.js"></script>
+    <script src="Employee2.js"></script>
     <header class="header-content header">
         <div class="log-content">
-            <img src="../Logo/logo-1.png" width="100px" alt="Employee Payroll">
+            <img src="../Assets/Images/logo (1).png" width="100px" alt="Employee Payroll">
             <div>
-                <span class="emp1">Employee</span><br>
-                <span class="emp2">Payroll</span>
+                <span class="emp-text">Employee</span><br>
+                <span class="emp-text emp-payroll">Payroll</span>
             </div>
            
         </div>
     </header>
-    <div class="from-content">
-        <form class="from error-output" action="#" onsubmit="save();return flase">
-            <div class="from-head">Employee Payroll Form</div>
+    <div class="form-content">
+        <form class="form error-output" action="#" onsubmit="save();return flase">
+            <div class="form-head">Employee Payroll Form</div>
             <div class="row-content">
-                <label class="label text name1" for="name">Name : </label>
+                <label class="label text " for="name">Name : </label>
                 <input class="input" type="text" id="name" name="name" placeholder="Your name...." required>
                 <error-output class="text-error" for="text"></error-output>
             </div>
@@ -33,20 +33,20 @@
                 <label class="label text" for="profile">Profile image : </label>
                 <div class="profile-radio-content">
                     <label>
-                        <input type="radio" id="profile1" name="profile" value="../Logo/Ellipse -1.png" required>
-                        <img class="profile" id="image1" src="../Logo/Ellipse -1.png">
+                        <input type="radio" id="profile1" name="profile" value="../Assets/Profile-Images/Ellipse -1.png" required>
+                        <img class="profile" id="image1" src="../Assets/Profile-Images/Ellipse -1.png">
                     </label>
                     <label>
-                        <input type="radio" id="profile1" name="profile" value="../Logo/Ellipse -2.png" required>
-                        <img class="profile" id="image1" src="../Logo/Ellipse -2.png">
+                        <input type="radio" id="profile1" name="profile" value="../Assets/Profile-Images/Ellipse -2.png" required>
+                        <img class="profile" id="image1" src="../Assets/Profile-Images/Ellipse -2.png">
                     </label>
                     <label>
-                        <input type="radio" id="profile1" name="profile" value="../Logo/Ellipse -5.png" required>
-                        <img class="profile" id="image1" src="../Logo/Ellipse -5.png">
+                        <input type="radio" id="profile1" name="profile" value="../Assets/Profile-Images/Ellipse -5.png" required>
+                        <img class="profile" id="image1" src="../Assets/Profile-Images/Ellipse -5.png">
                     </label>
                     <label>
-                        <input type="radio" id="profile1" name="profile" value="/../Logo/Ellipse -5.png" required>
-                        <img class="profile" id="image1" src="../Logo/Ellipse -7.png">
+                        <input type="radio" id="profile1" name="profile" value="../Assets/Profile-Images/Ellipse -7.png" required>
+                        <img class="profile" id="image1" src="../Assets/Profile-Images/Ellipse -7.png">
                     </label>
                 </div>
             </div>
@@ -76,9 +76,9 @@
             </div>
             <div class="row-content">
                 <label class="label text " for="salary">Choose your salary : </label>
-                <input class="input" type="range" name="salary" id="salary" min="300000" max="1000000" step="1000"
-                    value="400000">
-                <output class="salary-output text" for="salary">4000000</output>
+                <input class="input" type="range" name="salary" id="salary" min="30000" max="80000" step="1000"
+                    value="50000">
+                <output class="salary-output text" for="salary">50000</output>
             </div>
             <div class="row-content">
                 <label class="label text name5" for="startDate">Start Date : </label>
@@ -118,7 +118,7 @@
                     </select>
                     <select class="select" id="month" name="Month">
                         <option value="January">January</option>
-                        <option value="Febuary">Febuary</option>
+                        <option value="Febuary">February</option>
                         <option value="March">March</option>
                         <option value="April">April</option>
                         <option value="May">May</option>
@@ -131,25 +131,27 @@
                         <option value="December">December</option>
                     </select>
                     <select class="select" id="year" name="Year">
-                        <option value="2016">2018</option>
-                        <option value="2017">2019</option>
-                        <option value="2018">2020</option>
-                        <option value="2019">2021</option>
-                        <option value="2020">2022</option>
-                        <option value="2021">2022</option>
+                        <option value="2016">2016</option>
+                        <option value="2017">2017</option>
+                        <option value="2018">2018</option>
+                        <option value="2019">2019</option>
+                        <option value="2020">2020</option>
+                        <option value="2021">2021</option>
                         <option value="2022">2022</option>
                     </select>
                 </div>
             </div>
             <div class="row-content">
-                <label class="label text " for="notes">Notes : </label>
-                <textarea id="notes" class="input" name="Notes" placeholder="write somthing..."
+                <label class="label text " for="notes">Note : </label>
+                <textarea id="notes" class="input" name="Notes" placeholder="write something..."
                     style="height: 100px;"></textarea>
             </div>
             <div class="buttonParent">
                 <a href="emp2.html" class="resetButton button cancelButton">Cancel</a>
-                <button type="submit" class="button submitButton" id="submitButton">Subbmit</button>
-                <button type="reset" class="resetButton button">Reset</button>
+                <div class="submit-reset">
+                <button type="submit" class="button submitButton" id="submitButton">Submit</button>
+                <button type="reset" class="cancelButton button">Reset</button>
+              </div>
             </div>
         </form>
     </div>
