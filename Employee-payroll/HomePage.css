@@ -76,8 +76,8 @@ body{
 }
 
 .emp-count {
-    background-color: #200841;
-    color: #710f0f;
+    background-color: #c8badc;
+    color: #862525;
     border-radius: 42%;
     font-size: 16px;
     width: 26px;
@@ -86,14 +86,14 @@ body{
 }
 .add-button{
     display: flex;
-    font: normal normal normal 22px/29px Roboto;
+    font: normal normal normal 20px/25px Roboto;
     letter-spacing: 0px;
-    color: #600808;
+    color: #f4e6e6;
     opacity: 1;
-    background-color: #04072f 0% 0% no no-repeat padding-box;
-    border: none;
+    background-color: #46ba6f;
+    border:5px;
     border-radius: 5px;
-    padding: 5px 18px;
+    padding: 5px 8px;
     outline: none;
     cursor: pointer;
     text-decoration: none;

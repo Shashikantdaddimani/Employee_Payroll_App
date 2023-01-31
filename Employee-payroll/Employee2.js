@@ -63,7 +63,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
     const name = document.querySelector("#name");
     const textError = document.querySelector(".text-error");
     name.addEventListener("input", function () {
-        if (name.value && name.value.length == 0) {
+        if (name.value.length == 0) {
             textError.textContent = "";
             return;
         }
@@ -144,23 +144,3 @@ window.addEventListener('DOMContentLoaded', (event) =>{
     createInnerHtml();
 });
 
-const createInnerHtml=()=>{
-    const headerHtml = "<th></th><th>Name</th><th>Gender</th><th>Department</th><th>Salary</th><th>Start Date</th><th>Actions</th";
-    const innerHtml=`${headerHtml}
-
-    <tr>
-    <td><img class="profile" src="../assets/Profile-Images/Ellipse -2.png", alt=""></td>
-    <td>Narayan Mahadevan</td>
-    <td>Male</td>
-    <td><div class='dept-label'></div><div class='dept-label'>Finance</div></td>
-    <td>300000</td>
-    <td>1 Nov 2020</td>
-    <td>
-    <img name="1" onclick ="remove(this)" src="../assets/Icons/delete-black-18dp.svg" alt="delete">
-    <img name="1" onclick ="update(this)" src="../assets/Icons/create-black-18dp.svg" alt="edit">
-    </td>
-    </tr>
-    `;
-    document.querySelector('#table-display').innerHTML=innerHtml;
-
-}
