@@ -1,0 +1,49 @@
+{
+    "EmployeePayrollDB":[
+        {
+            "id":1,
+            "_name":"Mark Taylor",
+            "_gender":"male",
+            "_department":[
+                "HR",
+                "Sales",
+                "Finance",
+                "Engineer"
+
+            ],
+            "salary":"50000",
+            "_StartDate":"29 oct 2019",
+            "_note":"All in one",
+            "_profilePic":"../Assets/Profile-Images/Ellipse -1.png"
+
+        },
+        {
+            "id":2,
+            "_name":"Bill Gates",
+            "_gender":"male",
+            "_department":[
+                "Engineer"
+
+            ],
+            "salary":"70000",
+            "_StartDate":"29 oct 2019",
+            "_note":"All in one",
+            "_profilePic":"../Assets/Profile-Images/Ellipse -2.png" 
+        },
+        {
+            "id":3,
+            "_name":"Adani",
+            "_gender":"male",
+            "_department":[
+                "HR",
+                "Sales",
+                "Engineer"
+
+            ],
+            "salary":"60000",
+            "_StartDate":"29 oct 2019",
+            "_note":"All in one",
+            "_profilePic":"../Assets/Profile-Images/Ellipse -2.png" 
+        }
+    ]
+}
