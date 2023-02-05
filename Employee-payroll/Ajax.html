@@ -20,7 +20,7 @@
             margin-top: 50px;
         }
     </style>
-    <script src="AjaxPromise.js"></script>
+    <script src="./Ajax.js"></script>
 </head>
 
 <body>
@@ -41,7 +41,7 @@
             })
 
         const deleteElem = document.querySelector("#delete_services");
-        const deleteURL = "http://localhost:3000/EmployeePayrollDB/3";
+        const deleteURL = "http://localhost:3000/EmployeePayrollDB/2";
         makePromiseCall("Delete", deleteURL, false).then(responseText => {
             deleteElem.textContent = "Delete Data : " + responseText;
         })
